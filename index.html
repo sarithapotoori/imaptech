@@ -3,177 +3,141 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>imaptechnology — Software, Cloud & Automation</title>
-  <meta name="description" content="imaptechnology builds reliable software, cloud solutions, and automation for growing businesses." />
-  <meta name="theme-color" content="#0ea5e9" />
+  <title>IMAP Technologies | Software • Cloud • Automation</title>
+  <meta name="description" content="IMAP Technologies delivers custom software, cloud, and automation solutions for modern businesses." />
+  <meta name="theme-color" content="#0f3553" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="imaptechnology — Software, Cloud & Automation" />
-  <meta property="og:description" content="We design, build, and support modern software systems for ambitious teams." />
+  <!-- SEO / Social -->
+  <meta property="og:title" content="IMAP Technologies" />
+  <meta property="og:description" content="Custom software, cloud, and automation services." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.imaptechnology.com/" />
-  <meta property="og:image" content="data:image/svg+xml;utf8,
-  <svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'>
-    <rect width='100%' height='100%' fill='%230ea5e9'/>
-    <text x='50%' y='52%' dominant-baseline='middle' text-anchor='middle' font-family='Segoe UI, Roboto, Arial' font-size='64' fill='white'>imaptechnology</text>
-  </svg>">
 
-  <!-- Favicon (data URI) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230ea5e9'/%3E%3Cpath d='M16 42V22h8l8 9 8-9h8v20h-6V30l-10 12L22 30v12h-6z' fill='white'/%3E%3C/svg%3E">
-
-  <!-- Minimal, modern CSS -->
   <style>
     :root{
-      --bg: #0b1020;
-      --card: #0f172a;
-      --muted: #94a3b8;
-      --text: #e5e7eb;
-      --brand: #0ea5e9;
-      --brand-2: #22d3ee;
-      --ring: rgba(34,211,238,.35);
-      --shadow: 0 10px 30px rgba(2,8,23,.5);
-      --radius: 16px;
+      /* Brand colors from your logo */
+      --brand: #0f3553;  /* deep navy */
+      --accent: #f0a51a; /* orange */
+      --bg:#0a0f17;
+      --text:#e8eef6;
+      --muted:#a7b3c6;
+      --card:#0f1622;
+      --line: rgba(255,255,255,.08);
+      --shadow: 0 12px 36px rgba(2,8,23,.45);
+      --radius: 18px;
       --max: 1200px;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text); background:
-        radial-gradient(1200px 600px at 80% -10%, rgba(34,211,238,.15), transparent 60%),
-        radial-gradient(1000px 500px at -10% 0%, rgba(14,165,233,.12), transparent 60%),
-        var(--bg);
+      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 85% -10%, rgba(240,165,26,.10), transparent 60%),
+        radial-gradient(900px 500px at -10% 10%, rgba(15,53,83,.35), transparent 60%),
+        linear-gradient(180deg,#0a0f17,#0b1220);
     }
     a{color:inherit; text-decoration:none}
-    .container{max-width:var(--max); margin-inline:auto; padding: 0 20px}
+    .container{max-width:var(--max); margin-inline:auto; padding:0 20px}
+    header{
+      position:sticky; top:0; z-index:40;
+      backdrop-filter:saturate(1.2) blur(8px);
+      background:linear-gradient(to bottom, rgba(5,10,18,.85), rgba(5,10,18,.55));
+      border-bottom:1px solid var(--line);
+    }
+    .nav{display:flex; align-items:center; justify-content:space-between; height:68px}
+    .brand{display:flex; align-items:center; gap:.7rem; font-weight:800; letter-spacing:.2px}
+    .brand img{height:44px; width:auto}
+    nav ul{display:flex; gap:1.1rem; list-style:none; padding:0; margin:0}
+    nav a{color:var(--muted)}
+    nav a:hover{color:#fff}
     .btn{
-      display:inline-flex; align-items:center; gap:.6rem;
-      background:linear-gradient(135deg,var(--brand),var(--brand-2));
-      padding:.85rem 1.1rem; border-radius:12px; color:#081225; font-weight:700;
-      box-shadow: var(--shadow); transition: transform .15s ease, filter .2s ease;
+      display:inline-flex; align-items:center; gap:.55rem;
+      padding:.8rem 1.05rem; border-radius:12px; font-weight:700; letter-spacing:.2px;
+      background:linear-gradient(135deg, var(--accent), #ffd27a);
+      color:#271a00; box-shadow:var(--shadow); transition:transform .15s ease, filter .2s ease;
     }
     .btn:hover{transform:translateY(-1px); filter:brightness(1.05)}
     .btn.outline{
-      background:transparent; color:var(--text); border:1px solid rgba(148,163,184,.35);
+      background:transparent; color:var(--text); border:1px solid var(--line);
       box-shadow:none;
     }
-    header{
-      position:sticky; top:0; backdrop-filter:saturate(1.2) blur(8px);
-      background:linear-gradient(to bottom, rgba(2,6,23,.8), rgba(2,6,23,.4));
-      border-bottom:1px solid rgba(148,163,184,.12); z-index:30
-    }
-    .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
-    .brand{display:flex; align-items:center; gap:.6rem; font-weight:800; letter-spacing:.3px}
-    .logo{
-      width:28px; height:28px; border-radius:8px;
-      background: conic-gradient(from 210deg at 50% 50%, var(--brand) , var(--brand-2) 60%, #6ee7b7 100%);
-      box-shadow: inset 0 0 0 2px rgba(255,255,255,.15);
-    }
-    nav ul{display:flex; gap:1.1rem; list-style:none; margin:0; padding:0}
-    nav a{color:var(--muted)}
-    nav a:hover{color:#fff}
+
     /* Hero */
-    .hero{padding: clamp(56px, 9vw, 120px) 0 48px}
-    .h-grid{
-      display:grid; grid-template-columns: 1.1fr .9fr; gap:40px; align-items:center;
+    .hero{padding: clamp(56px, 9vw, 120px) 0 56px}
+    .hgrid{display:grid; grid-template-columns: 1.05fr .95fr; gap:36px; align-items:center}
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:.5rem; color:#dfe8f4;
+      border:1px solid var(--line); padding:.35rem .6rem; border-radius:999px;
+      background:rgba(255,255,255,.03); font-size:.88rem;
     }
-    .badge{
-      display:inline-flex; align-items:center; gap:.5rem;
-      border:1px solid rgba(148,163,184,.25); color:var(--muted);
-      padding:.35rem .6rem; border-radius:999px; font-size:.85rem;
-      background:rgba(2,6,23,.35);
-    }
-    h1{font-size: clamp(2rem, 4.2vw, 3.5rem); line-height:1.15; margin:.7rem 0}
-    .lead{color:#cbd5e1; font-size:1.075rem; max-width:48ch}
-    .cta{display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.2rem}
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-      border:1px solid rgba(148,163,184,.12); border-radius: var(--radius); padding:22px;
-      box-shadow: var(--shadow);
-    }
+    h1{font-size: clamp(2rem, 4vw, 3.2rem); line-height:1.12; margin:.6rem 0}
+    .lead{color:#c8d3e6; max-width:60ch; font-size:1.08rem}
     .mock{
-      aspect-ratio: 16/10; border-radius:14px; background:
-        radial-gradient(180px 100px at 80% 20%, rgba(34,211,238,.35), transparent 60%),
-        linear-gradient(180deg,#0b1220,#0b1220);
-      border:1px solid rgba(148,163,184,.12);
-      display:grid; place-items:center; color:#9fb7ff; font-weight:700; letter-spacing:.3px;
+      aspect-ratio:16/10; border-radius:16px; border:1px solid var(--line);
+      background:
+        radial-gradient(220px 160px at 80% 25%, rgba(240,165,26,.25), transparent 60%),
+        linear-gradient(180deg,#0d1524,#0a1020);
+      display:grid; place-items:center; color:#ffe0a6; font-weight:700; letter-spacing:.3px;
+      box-shadow:var(--shadow);
     }
+
     /* Sections */
-    section{padding:64px 0}
+    section{padding:68px 0}
     .section-title{font-size:1.6rem; margin:0 0 .4rem}
     .muted{color:var(--muted)}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border:1px solid var(--line); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)
+    }
     .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
-    .feature{padding:18px}
-    .feature h3{margin:.3rem 0 .2rem; font-size:1.05rem}
-    .feature p{margin:0; color:#cbd5e1}
+    .feature h3{margin:.25rem 0 .1rem; font-size:1.08rem}
     .icon{
-      width:36px; height:36px; border-radius:10px; display:grid; place-items:center;
-      background:linear-gradient(135deg, rgba(14,165,233,.25), rgba(34,211,238,.15));
-      border:1px solid rgba(148,163,184,.18)
+      width:38px; height:38px; border-radius:10px; display:grid; place-items:center;
+      background:linear-gradient(135deg, rgba(15,53,83,.45), rgba(240,165,26,.20));
+      border:1px solid var(--line)
     }
-    /* Logos */
-    .logos{display:grid; grid-auto-flow:column; gap:24px; overflow:auto; padding:8px 0}
-    .logos span{
-      opacity:.75; border:1px dashed rgba(148,163,184,.25); border-radius:12px;
-      padding:10px 14px; white-space:nowrap; font-size:.9rem
-    }
+
+    /* Industries row */
+    .logos{display:grid; grid-auto-flow:column; gap:18px; overflow:auto; padding:8px 0}
+    .logos span{white-space:nowrap; border:1px dashed var(--line); padding:10px 14px; border-radius:12px; opacity:.85}
+
     /* About */
-    .about{display:grid; grid-template-columns: .9fr 1.1fr; gap:28px}
-    /* CTA banner */
-    .cta-banner{
-      display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
-      border:1px solid rgba(148,163,184,.15); border-radius:20px; padding:22px;
-      background: linear-gradient(180deg, rgba(14,165,233,.08), rgba(34,211,238,.04));
-    }
+    .about{display:grid; grid-template-columns:.9fr 1.1fr; gap:24px}
+
     /* Contact */
-    form{
-      display:grid; gap:10px;
-    }
+    form{display:grid; gap:10px}
     input, textarea{
-      background:#0b1220; color:var(--text); border:1px solid rgba(148,163,184,.25);
-      border-radius:12px; padding:12px; outline:none;
+      background:#0b1220; color:var(--text);
+      border:1px solid rgba(255,255,255,.15); border-radius:12px; padding:12px; outline:none;
     }
-    input:focus, textarea:focus{box-shadow:0 0 0 6px var(--ring); border-color:var(--brand-2)}
+    input:focus, textarea:focus{box-shadow:0 0 0 6px rgba(240,165,26,.25); border-color:#ffd27a}
     textarea{min-height:120px; resize:vertical}
-    footer{padding:40px 0 60px; color:var(--muted); border-top:1px solid rgba(148,163,184,.12)}
+
+    footer{padding:40px 0 56px; color:var(--muted); border-top:1px solid var(--line)}
     .foot{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
+
     /* Responsive */
     @media (max-width: 980px){
-      .h-grid{grid-template-columns:1fr; gap:18px}
+      .hgrid{grid-template-columns:1fr}
       .about{grid-template-columns:1fr}
       .grid3{grid-template-columns:1fr; gap:12px}
     }
   </style>
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"imaptechnology",
-    "url":"https://www.imaptechnology.com/",
-    "logo":"https://www.imaptechnology.com/favicon.svg",
-    "sameAs": [],
-    "contactPoint": [{
-      "@type":"ContactPoint",
-      "contactType":"sales",
-      "email":"sales@imaptechnology.com",
-      "telephone":"+61-000-000-000"
-    }]
-  }
-  </script>
 </head>
 <body>
+  <!-- NAV -->
   <header>
     <div class="container nav">
-      <a class="brand" href="#home" aria-label="imaptechnology home">
-        <img src="logo.jpg" alt="imaptechnology logo" style="height:40px; width:auto; border-radius:4px;" />
-        <span>imaptechnology</span>
+      <a class="brand" href="#home" aria-label="IMAP Technologies home">
+        <!-- Put your logo file next to index.html as logo.jpg -->
+        <img src="logo.jpg" alt="IMAP Technologies logo">
+        <span>IMAP Technologies</span>
       </a>
       <nav aria-label="Primary">
         <ul>
           <li><a href="#services">Services</a></li>
-          <li><a href="#work">Work</a></li>
+          <li><a href="#industries">Industries</a></li>
           <li><a href="#about">About</a></li>
           <li><a class="btn outline" href="#contact">Contact</a></li>
         </ul>
@@ -183,25 +147,23 @@
 
   <!-- HERO -->
   <main id="home" class="hero">
-    <div class="container h-grid">
+    <div class="container hgrid">
       <div>
-        <span class="badge">🚀 Shipping reliable software since 1999</span>
-        <h1>We build software, cloud, and automation that scale with you.</h1>
-        <p class="lead">imaptechnology helps teams design, ship, and operate modern applications—from idea to production. We keep it simple, secure, and cost-effective.</p>
-        <div class="cta">
+        <span class="eyebrow">Trusted engineering • On-time delivery</span>
+        <h1>We design and ship modern software, cloud, and automation that scale with your business.</h1>
+        <p class="lead">From discovery to production, we build secure, reliable systems with clear milestones and measurable outcomes.</p>
+        <div style="display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.1rem">
           <a class="btn" href="#contact">Start a project</a>
           <a class="btn outline" href="#services">Explore services</a>
         </div>
-        <div style="margin-top:22px" class="logos" aria-label="Customer logos">
-          <span>Fintech</span><span>Healthcare</span><span>Retail</span><span>Gov</span><span>SaaS</span>
+        <div class="logos" style="margin-top:22px" aria-label="Industries">
+          <span>Financial Services</span><span>Healthcare</span><span>Retail</span><span>Public Sector</span><span>SaaS</span>
         </div>
       </div>
-      <div class="card">
-        <div class="mock">
-          <div>
-            <div style="font-size:1.1rem">Deployment ✔</div>
-            <div class="muted">Zero-downtime • CI/CD • Observability</div>
-          </div>
+      <div class="card mock">
+        <div>
+          <div style="text-align:center; font-size:1.05rem">Zero-downtime deployments ✔</div>
+          <div class="muted" style="text-align:center">CI/CD • Observability • Security by default</div>
         </div>
       </div>
     </div>
@@ -210,45 +172,45 @@
   <!-- SERVICES -->
   <section id="services">
     <div class="container">
-      <h2 class="section-title">What we do</h2>
+      <h2 class="section-title">Services</h2>
       <p class="muted" style="margin-bottom:18px">Small, senior team. Clear outcomes. No fluff.</p>
       <div class="grid3">
         <div class="card feature">
           <div class="icon">🧩</div>
           <h3>Custom Software</h3>
-          <p>From MVPs to enterprise apps: APIs, dashboards, and integrations tailored to your workflows.</p>
+          <p>Product discovery, UX, APIs, dashboards, and integrations. From MVPs to enterprise systems.</p>
         </div>
         <div class="card feature">
           <div class="icon">☁️</div>
           <h3>Cloud & DevOps</h3>
-          <p>AWS/Azure/GCP design, infrastructure as code, containers, CI/CD, and cost optimization.</p>
+          <p>AWS/Azure/GCP architecture, infrastructure as code, containers, CI/CD, and cost optimization.</p>
         </div>
         <div class="card feature">
-          <div class="icon">⚙️</div>
+          <div class="icon">🤖</div>
           <h3>Automation & AI</h3>
-          <p>Chatbots, RPA, and data pipelines to remove manual drudgery and speed up decisions.</p>
+          <p>RPA, chatbots, and data pipelines to reduce manual work and accelerate decisions.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WORK -->
-  <section id="work">
+  <!-- INDUSTRIES / HIGHLIGHTS -->
+  <section id="industries">
     <div class="container">
       <h2 class="section-title">Selected results</h2>
-      <p class="muted" style="margin-bottom:18px">Recent wins we’re proud of.</p>
+      <p class="muted" style="margin-bottom:18px">Outcomes we’ve delivered.</p>
       <div class="grid3">
         <div class="card">
           <strong>Retail Analytics</strong>
-          <p class="muted">Real-time inventory service handling 50k events/min with 99.99% uptime.</p>
+          <p class="muted">Event-driven inventory service handling 50k events/min with 99.99% uptime.</p>
         </div>
         <div class="card">
           <strong>Healthcare Portal</strong>
-          <p class="muted">HIPAA-ready portal with secure messaging and audit trails.</p>
+          <p class="muted">Privacy-first patient portal with secure messaging and audit trails.</p>
         </div>
         <div class="card">
-          <strong>Fintech Ops</strong>
-          <p class="muted">Automated reconciliation pipeline cutting daily ops time by 70%.</p>
+          <strong>FinOps Automation</strong>
+          <p class="muted">Reconciliation workflows that cut daily ops time by 70%.</p>
         </div>
       </div>
     </div>
@@ -258,20 +220,21 @@
   <section id="about">
     <div class="container about">
       <div class="card">
-        <h2 class="section-title">About imaptechnology</h2>
-        <p>We’re a lean engineering studio focused on delivering business value quickly. You’ll work directly with senior engineers who design, build, and operate your systems.</p>
+        <h2 class="section-title">About IMAP Technologies</h2>
+        <p>We’re a lean engineering studio focused on shipping value quickly. You’ll work directly with senior engineers who design, build, and operate your systems.</p>
         <ul class="muted">
           <li>Transparent pricing & weekly demos</li>
           <li>Security-first culture & best practices</li>
           <li>Documentation and knowledge transfer included</li>
         </ul>
       </div>
-      <div class="cta-banner">
-        <div>
-          <strong style="display:block; font-size:1.1rem">Have a roadmap or an idea?</strong>
-          <span class="muted">We’ll scope it into milestones you can ship.</span>
+      <div class="card">
+        <h3 style="margin:.2rem 0 .4rem">How we work</h3>
+        <p class="muted">Define outcomes → Break into milestones → Deliver in short iterations with clear KPIs. Tooling we love: Azure, AWS, Docker, Kubernetes, Terraform, .NET, Node.js, Python.</p>
+        <div style="margin-top:10px; display:flex; gap:.7rem; flex-wrap:wrap">
+          <a class="btn" href="#contact">Book a free consult</a>
+          <a class="btn outline" href="#services">See services</a>
         </div>
-        <a class="btn" href="#contact">Book a free consult</a>
       </div>
     </div>
   </section>
@@ -300,9 +263,9 @@
         </form>
         <div class="card">
           <strong>Contact</strong>
-          <p class="muted">Email: <a href="mailto:hello@imaptechnology.com">help@imaptechnology.com</a><br>
-          Phone: <a href="tel:+91 9705944899">+91 9705944899</a><br>
-          Hyderabad, India</p>
+          <p class="muted">Email: <a href="mailto:hello@imaptechnology.com">hello@imaptechnology.com</a><br>
+          Phone: <a href="tel:+61XXXXXXXXX">+61 XXX XXX XXX</a><br>
+          Sydney, Australia</p>
           <strong>Follow</strong>
           <p class="muted"><a href="#" aria-disabled="true">LinkedIn</a> · <a href="#" aria-disabled="true">GitHub</a> · <a href="#" aria-disabled="true">X</a></p>
         </div>
@@ -312,15 +275,17 @@
 
   <footer>
     <div class="container foot">
-      <div class="brand"><img src="logo.jpg" alt="imaptechnology logo" style="height:40px; width:auto; border-radius:4px;" />imaptechnology</div>
-      <div>© 1999 imaptechnology. All rights reserved.</div>
+      <div class="brand">
+        <img src="logo.jpg" alt="IMAP Technologies logo" style="height:28px; width:auto">
+        <span>IMAP Technologies</span>
+      </div>
+      <div>© <span id="year"></span> IMAP Technologies. All rights reserved.</div>
     </div>
   </footer>
 
   <script>
-    // Set year
-
-    // Fake submit for static hosting: opens mailto with prefilled body
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Static-form fallback: opens the user's email app with prefilled body
     function submitContact(form){
       const data = new FormData(form);
       const name = encodeURIComponent(data.get('name'));
@@ -334,8 +299,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
