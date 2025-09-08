@@ -241,97 +241,37 @@
 
   <!-- CONTACT -->
   <section id="contact" aria-labelledby="contact-title">
-<div class="contact-section">
-        <div class="wrapper">
-        <div class="contact-form-section">
-          <div class="contact-info">
-                 <h4>GET IN TOUCH</h4>
-                
-              <ul>
-                  <li> 
-                  <i class="fa-solid fa-phone"></i>
-                     <div class="phn-icon-box">
-                    <!-- <h5>Phone no</h5> -->
-                  <a href="tel:+91-8708419611">+91-8708419611</a>
-                  </div>
-                  </li>
-                   <li>
-                       <i class="fa-solid fa-envelope"></i>
-                        <div class="phn-icon-box">
-                         <!-- <h5>Email</h5> -->
-                       <a href="mailto:hr@imaptechnologies.com">hr@imaptechnologies.com</a>
-                       </div>
-                     </li>
-                       
-                   <li>
-                       <i class="fa-solid fa-location-dot"></i>
-                       <div class="phn-icon-box">
-                          <!-- <h5>Address</h5> -->
-                       <a href="#">SCO 185, Second Floor, Sector 22D, Chandigarh, 160022</a>
-                        
-                        </div>
-                    </li>
-                    <li>
-                      <i class="fa fa-clock-o" aria-hidden="true"></i>
-                       <div class="phn-icon-box">
-                        <!--   <h5>Hours</h5> -->
-                       <a href="#">24/7 Available</a>
-                        </div>
-                    </li>
-              </ul>
-          </div>
-
-  
-<div class="form-section">
-    <h4 class="form-heading">CONTACT US</h4>
-    
-    <div class="wpcf7 js" id="wpcf7-f246-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/#wpcf7-f246-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="246">
-<input type="hidden" name="_wpcf7_version" value="5.7.2">
-<input type="hidden" name="_wpcf7_locale" value="en_US">
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f246-o1">
-<input type="hidden" name="_wpcf7_container_post" value="0">
-<input type="hidden" name="_wpcf7_posted_data_hash" value="">
-</div>
-<div class="form_70">
-	<div class="form1">
-		<div class="form_100">
-			<p><span class="wpcf7-form-control-wrap" data-name="YourName"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name" value="" type="text" name="YourName"></span>
-			</p>
-		</div>
-		<div class="form_100">
-			<p><span class="wpcf7-form-control-wrap" data-name="LastName"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last Name" value="" type="text" name="LastName"></span>
-			</p>
-		</div>
-	</div>
-	<div class="form2">
-		<div class="form_100">
-			<p><span class="wpcf7-form-control-wrap" data-name="tel-148"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone Number" value="" type="tel" name="tel-148"></span>
-			</p>
-		</div>
-		<div class="form_100">
-			<p><span class="wpcf7-form-control-wrap" data-name="email-975"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Id" value="" type="email" name="email-975"></span>
-			</p>
-		</div>
-	</div>
-	<div class="form_100">
-		<p><span class="wpcf7-form-control-wrap" data-name="textarea-827"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your Message" name="textarea-827"></textarea></span>
-		</p>
-	</div>
-	<div class="contct-pg-form-btn-sbmt">
-		<p><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="SUBMIT"><span class="wpcf7-spinner"></span>
-		</p>
-	</div>
-</div><div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div>
-   
-</div>
- 
-   
-</div>
+    <div class="container">
+      <h2 id="contact-title" class="section-title">Let’s talk</h2>
+      <p class="muted">Tell us a bit about your project. We’ll reply within one business day.</p>
+      <div class="grid3" style="grid-template-columns:1.1fr .9fr 0">
+        <form class="card" onsubmit="event.preventDefault(); submitContact(this)">
+          <label>
+            <span class="muted">Your name</span>
+            <input name="name" placeholder="Jane Doe" required>
+          </label>
+          <label>
+            <span class="muted">Email</span>
+            <input name="email" type="email" placeholder="you@company.com" required>
+          </label>
+          <label>
+            <span class="muted">How can we help?</span>
+            <textarea name="message" placeholder="Briefly describe your goals…" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message</button>
+          <p id="form-status" class="muted" role="status" aria-live="polite" style="margin:8px 0 0"></p>
+        </form>
+        <div class="card">
+          <strong>Contact</strong>
+          <p class="muted">Email: <a href="mailto:hello@imaptechnology.com">help@imaptechnology.com</a><br>
+          Phone: <a href="tel:+91 9705944899">+91 9705944899</a><br>
+          Hyderabad, India</p>
+          <strong>Follow</strong>
+          <p class="muted"><a href="#" aria-disabled="true">LinkedIn</a> · <a href="#" aria-disabled="true">GitHub</a> · <a href="#" aria-disabled="true">X</a></p>
         </div>
+      </div>
+    </div>
+
   </section>
 
   <footer>
